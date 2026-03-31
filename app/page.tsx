@@ -34,12 +34,12 @@ const mobos = [
 const psus = ["400W Bronze","450W Bronze","550W Bronze","600W Bronze","650W Gold","750W Gold","850W Gold","1000W Platinum","1200W Titanium"];
 const ramSizes = ["8GB (1x8)","8GB (2x4)","16GB (2x8)","16GB (1x16)","32GB (2x16)","32GB (4x8)","64GB (2x32)"];
 
-function GlowText({ children, color = NEON }: { children: React.ReactNode, color?: string }) {
+function GlowText({ children, color = "#00ff88" }: any) {
   return (
     <span style={{ color, textShadow: `0 0 12px ${color}88, 0 0 24px ${color}44` }}>
       {children}
     </span>
-  )
+  );
 }
 
 function ScanLine() {
